@@ -1,0 +1,133 @@
+.login{
+    color: black;
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/26/13/12/pencils-1280558_960_720.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+.recordarContraseña{
+    width:48%; text-align:left;  display: inline-block;
+}
+
+.recordarContraseña:hover{
+    width:48%; text-align:left;  display: inline-block; color:#ffff;
+}
+.botonEntrar{
+    width:50%; text-align:right;  display: inline-block;
+}
+
+
+
+
+/* ---------- GENERAL ---------- */
+
+
+
+a {
+	color: #eee;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+input {
+	border: none;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	padding: 0;
+	-webkit-appearance: none;
+}
+
+
+
+.container {
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ---------- LOGIN ---------- */
+
+#login form{
+	width: 250px;
+}
+#login, .logo{
+    display:inline-block;
+    width:40%;
+}
+#login{
+border-right:1px solid #fff;
+  padding: 0px 22px;
+  width: 59%;
+}
+.logo{
+color:#fff;
+font-size:50px;
+  line-height: 125px;
+}
+
+#login form span.fa {
+	background-color: #fff;
+	border-radius: 3px 0px 0px 3px;
+	color: #000;
+	display: block;
+	float: left;
+	height: 50px;
+    font-size:24px;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+}
+
+#login form input {
+	height: 50px;
+}
+fieldset{
+    padding:0;
+    border:0;
+    margin: 0;
+
+}
+#login form input[type="text"], input[type="password"] {
+	background-color: #fff;
+	border-radius: 0px 3px 3px 0px;
+	color: #000;
+	margin-bottom: 1em;
+	padding: 0 16px;
+	width: 200px;
+}
+
+#login form input[type="submit"] {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #000000;
+  color: #eee;
+  font-weight: bold;
+  /* margin-bottom: 2em; */
+  text-transform: uppercase;
+  padding: 5px 10px;
+  height: 30px;
+}
+
+#login form input[type="submit"]:hover {
+	background-color: #03949e;
+}
+
+#login > p {
+	text-align: center;
+}
+
+#login > p span {
+	padding-left: 5px;
+}
+.middle {
+  display: flex;
+  width: 600px;
+}

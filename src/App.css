@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+
+.fondo{
+  background: #4B79A1;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.imagenesBanner{
+  height: 100vh;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.botonBanner{
+  width:auto;
+  height: 20%;
+  font-size: 23px;
+  background-image: linear-gradient( 109.5deg,  rgb(46, 170, 189) 11.2%, rgba(92,121,255,1) 91.1% );
+  color: #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.barra{
+  height: 70px;
+	position:fixed;
+	z-index:1000;
+	top:0;
+	max-width: 100%;
+	width:100%;
+  -webkit-box-shadow: -1px 13px 30px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 13px 30px -5px rgba(0,0,0,0.75);
+  box-shadow: -1px 13px 30px -5px rgba(0,0,0,0.75);
 }
 
-.App-link {
-  color: #61dafb;
+.color-Barra{
+  background-image: linear-gradient( 109.5deg,  rgb(46, 170, 189) 11.2%, rgba(92,121,255,1) 91.1% );
+  color: #ffffff;
+  height: 70px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menuhamb{
+  background-image:auto;
+  color: #ffffff;
+  
 }
