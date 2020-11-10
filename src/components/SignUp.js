@@ -4,15 +4,15 @@ import "./SignUp.css";
 export default class SignUp extends Component {
   render() {
     return (
-      <div class="main login">
-        <div class="container">
+      <div className="main login">
+        <div className="container">
           <center>
-            <div class="middle">
+            <div className="middle">
               <div id="login">
                 <form action="javascript:void(0);" method="get">
-                  <fieldset class="clearfix">
+                  <fieldset className="clearfix">
                     <p>
-                      <span class="fa fa-user"></span>
+                      <span className="fa fa-user"></span>
                       <input
                         type="text"
                         Placeholder="Username"
@@ -20,7 +20,7 @@ export default class SignUp extends Component {
                       ></input>
                     </p>
                     <p>
-                      <span class="fa fa-lock"></span>
+                      <span className="fa fa-lock"></span>
                       <input
                         type="password"
                         Placeholder="Password"
@@ -30,7 +30,7 @@ export default class SignUp extends Component {
 
                     <div>
                       <span className="recordarContraseña">
-                        <a class="small-text recordarContraseña" href="#">
+                        <a className="small-text recordarContraseña" href="#">
                           Forgot password?
                         </a>
                       </span>
@@ -39,14 +39,14 @@ export default class SignUp extends Component {
                       </span>
                     </div>
                   </fieldset>
-                  <div class="clearfix"></div>
+                  <div className="clearfix"></div>
                 </form>
 
-                <div class="clearfix"></div>
+                <div className="clearfix"></div>
               </div>
-              <div class="logo">
+              <div className="logo">
                 Escort
-                <div class="clearfix"></div>
+                <div className="clearfix"></div>
               </div>
             </div>
           </center>

@@ -2,9 +2,9 @@ import React from "react";
 
 const Navigation = () => (
   <div className="barra">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark color-Barra">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark color-Barra">
       <button
-        class="navbar-toggler"
+        className="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarTogglerDemo03"
@@ -12,23 +12,23 @@ const Navigation = () => (
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand aLogo " href="#">
+      <NavLink className="navbar-brand aLogo " to="#">
         Escort
-      </a>
+      </NavLink>
 
-      <div class="collapse navbar-collapse menuhamb " id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menuhamb">
-          <li class="nav-item active menuhamb">
-            <a class="nav-link menuhamb" href="./vistaLogin.html">
-              Inicio <span class="sr-only">(current)</span>
-            </a>
+      <div className="collapse navbar-collapse menuhamb " id="navbarTogglerDemo03">
+        <ul className="navbar-nav mr-auto mt-2 mt-lg-0 menuhamb">
+          <li className="nav-item active menuhamb">
+            <NavLink className="nav-link menuhamb" to="./vistaLogin.html">
+              Inicio <span className="sr-only">(current)</span>
+            </NavLink>
           </li>
-          <li class="nav-item">
-            <a class="nav-link menuhamb" href="#">
+          <li className="nav-item">
+            <NavLink className="nav-link menuhamb" to="#">
               Como Funciona
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>
