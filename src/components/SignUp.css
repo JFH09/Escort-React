@@ -1,21 +1,29 @@
-.login{
-    color: black;
-    background-image: url("https://cdn.pixabay.com/photo/2016/03/26/13/12/pencils-1280558_960_720.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    
+.login {
+  color: black;
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/26/13/12/pencils-1280558_960_720.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
 }
 
-.recordarContraseña{
-    width:48%; text-align:left;  display: inline-block;
+.recordarContraseña {
+  width: 48%;
+  text-align: left;
+  display: inline-block;
 }
 
-.recordarContraseña:hover{
-    width:48%; text-align:left;  display: inline-block; color:#ffff;
+.recordarContraseña:hover {
+  width: 48%;
+  text-align: left;
+  display: inline-block;
+  color: #ffff;
 }
-.botonEntrar{
-    width:50%; text-align:right;  display: inline-block;
+
+.botonEntrar {
+  width: 50%;
+  text-align: right;
+  display: inline-block;
 }
 
 
@@ -26,21 +34,21 @@
 
 
 a {
-	color: #eee;
-	text-decoration: none;
+  color: #eee;
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 input {
-	border: none;
-	font-family: 'Open Sans', Arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.5em;
-	padding: 0;
-	-webkit-appearance: none;
+  border: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-appearance: none;
 }
 
 
@@ -54,53 +62,60 @@ input {
 
 /* ---------- LOGIN ---------- */
 
-#login form{
-	width: 250px;
+#login form {
+  width: 250px;
 }
-#login, .logo{
-    display:inline-block;
-    width:40%;
+
+#login,
+.logo {
+  display: inline-block;
+  width: 40%;
 }
-#login{
-border-right:1px solid #fff;
+
+#login {
+  border-right: 1px solid #fff;
   padding: 0px 22px;
   width: 59%;
 }
-.logo{
-color:#fff;
-font-size:50px;
+
+.logo {
+  color: #fff;
+  font-size: 50px;
   line-height: 125px;
 }
 
 #login form span.fa {
-	background-color: #fff;
-	border-radius: 3px 0px 0px 3px;
-	color: #000;
-	display: block;
-	float: left;
-	height: 50px;
-    font-size:24px;
-	line-height: 50px;
-	text-align: center;
-	width: 50px;
+  background-color: #fff;
+  border-radius: 3px 0px 0px 3px;
+  color: #000;
+  display: block;
+  float: left;
+  height: 50px;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
 }
 
 #login form input {
-	height: 50px;
+  height: 50px;
 }
-fieldset{
-    padding:0;
-    border:0;
-    margin: 0;
+
+fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
 
 }
-#login form input[type="text"], input[type="password"] {
-	background-color: #fff;
-	border-radius: 0px 3px 3px 0px;
-	color: #000;
-	margin-bottom: 1em;
-	padding: 0 16px;
-	width: 200px;
+
+#login form input[type="text"],
+input[type="password"] {
+  background-color: #fff;
+  border-radius: 0px 3px 3px 0px;
+  color: #000;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 200px;
 }
 
 #login form input[type="submit"] {
@@ -109,7 +124,7 @@ fieldset{
   -webkit-border-radius: 3px;
   background-color: #000000;
   color: #eee;
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
   text-transform: uppercase;
   padding: 5px 10px;
   height: 30px;
@@ -117,16 +132,17 @@ fieldset{
 
 
 #login form input[type="submit"]:hover {
-	background-color: #03949e;
+  background-color: #03949e;
 }
 
-#login > p {
-	text-align: center;
+#login>p {
+  text-align: center;
 }
 
-#login > p span {
-	padding-left: 5px;
+#login>p span {
+  padding-left: 5px;
 }
+
 .middle {
   display: flex;
   width: 600px;
@@ -134,14 +150,40 @@ fieldset{
 
 /* Formulario de registro */
 
-.form-main{
+.form-main {
   height: 500px;
   width: 700px;
-  border: #000 solid 5px;
   border-radius: 10px;
   background-color: #fff;
+  padding: 20px;
+  margin: 5px;
+  -webkit-box-shadow: 9px 6px 244px 84px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 9px 6px 244px 84px rgba(0, 0, 0, 1);
+  box-shadow: 9px 6px 244px 84px rgba(0, 0, 0, 1);
 }
 
-.form-main .header{
+.form-main .header {
   text-align: center;
+  font-size: 16;
+  font-weight: 900;
+}
+
+.form-main .form {
+  font-size: 16;
+  font-weight: 500;
+}
+
+.form-main .form input {
+  border: solid black 1px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 0px 5px;
+  outline: none;
+}
+
+.form-main .footer input {
+  color: #eee;
+  background-color: #000;
+  outline: none;
+  padding: 0px 5px;
 }

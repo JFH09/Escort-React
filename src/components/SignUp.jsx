@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "./SignUp.css";
 import Popup from 'reactjs-popup';
 
@@ -28,7 +28,6 @@ export default class SignUp extends Component {
                         required
                       ></input>
                     </p>
-
                     <div>
                       <span className="recordarContraseña">
                         <a className="small-text recordarContraseña" href="#">
@@ -38,13 +37,32 @@ export default class SignUp extends Component {
                       <span className="botonEntrar">
                         <input type="submit" value="Sign In"></input>
                         <Popup trigger={<input type="submit" value="Registro"></input>} modal nested>
-                          <div className="form-main">
+                          { close => (<div className="form-main">
+                            <button className="close" onClick={close}>×</button>
                             <div className="header">Registro</div>
                             <form className="form">
-                              <label>Nombre</label>
-                              <input type="text"/>
+                              <label htmlFor="nombre">Nombre</label>
+                              <input id="nombre" type="text" required/>
+                              <br/>
+                              <label htmlFor="apellido">Apellido</label>
+                              <input id="apellido" type="text" required/>
+                              <br/>
+                              <label htmlFor="email">E-Mail</label>
+                              <input id="email" type="mail" required/>
+                              <br/>
+                              <label htmlFor="institucion">Instituci&oacute;n</label>
+                              <input id="institucion" type="text" required/>
+                              <br/>
+                              <label htmlFor="contra">Contraseña</label>
+                              <input id="contra" type="password" required/>
+                              <br/>
+                              <label htmlFor="recontra">Confirmar Contraseña</label>
+                              <input id="recontra" type="password" required/>
+                            <div className="footer">
+                              <input type="submit" value="Registrar"/>
+                            </div>
                             </form>
-                          </div>
+                          </div>)}
                         </Popup> 
                       </span>
                     </div>

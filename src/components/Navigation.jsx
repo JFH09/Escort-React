@@ -13,7 +13,7 @@ const Navigation = () => (
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon">Boton</span>
+        <span className="navbar-toggler-icon">  </span>
       </button>
       <NavLink className="navbar-brand aLogo " to={`/`}>
         Escort
