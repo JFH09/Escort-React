@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./SignUp.css";
+import Popup from 'reactjs-popup';
 
 export default class SignUp extends Component {
   render() {
@@ -36,6 +37,15 @@ export default class SignUp extends Component {
                       </span>
                       <span className="botonEntrar">
                         <input type="submit" value="Sign In"></input>
+                        <Popup trigger={<input type="submit" value="Registro"></input>} modal nested>
+                          <div className="form-main">
+                            <div className="header">Registro</div>
+                            <form className="form">
+                              <label>Nombre</label>
+                              <input type="text"/>
+                            </form>
+                          </div>
+                        </Popup> 
                       </span>
                     </div>
                   </fieldset>

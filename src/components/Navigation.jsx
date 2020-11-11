@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navigation = () => (
   <div className="barra">
@@ -12,16 +13,16 @@ const Navigation = () => (
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon">Boton</span>
       </button>
-      <NavLink className="navbar-brand aLogo " to="#">
+      <NavLink className="navbar-brand aLogo " to={`/`}>
         Escort
       </NavLink>
 
       <div className="collapse navbar-collapse menuhamb " id="navbarTogglerDemo03">
         <ul className="navbar-nav mr-auto mt-2 mt-lg-0 menuhamb">
           <li className="nav-item active menuhamb">
-            <NavLink className="nav-link menuhamb" to="./vistaLogin.html">
+            <NavLink className="nav-link menuhamb" to={`/Ingresar/`}>
               Inicio <span className="sr-only">(current)</span>
             </NavLink>
           </li>
