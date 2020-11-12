@@ -128,8 +128,26 @@ input[type="password"] {
   text-transform: uppercase;
   padding: 5px 10px;
   height: 30px;
+  cursor: pointer;
 }
 
+#login form input[type="button"] {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #000000;
+  color: #eee;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  height: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+#login form input[type="button"]:hover {
+  background-color: #03949e;
+}
 
 #login form input[type="submit"]:hover {
   background-color: #03949e;
@@ -151,7 +169,7 @@ input[type="password"] {
 /* Formulario de registro */
 
 .form-main {
-  height: 500px;
+  height: 370px;
   width: 700px;
   border-radius: 10px;
   background-color: #fff;
@@ -171,8 +189,17 @@ input[type="password"] {
 .form-main .form {
   font-size: 16;
   font-weight: 500;
-}
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
+}
+.form-main .form .dos{
+  grid-column-start: 2;
+}
+.form-main .form .uno{
+  grid-column-start: 1;
+}
 .form-main .form input {
   border: solid black 1px;
   border-radius: 5px;
@@ -181,9 +208,73 @@ input[type="password"] {
   outline: none;
 }
 
-.form-main .footer input {
+.form-main .form select {
+  width: 200px;
+  border: solid black 1px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 0px 5px;
+  outline: none;
+}
+
+.form-main .form #cargo {
+  width: 150px;
+  border: solid black 1px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 0px 5px;
+  outline: none;
+}
+
+.form-main .form #curso {
+  width: 100px;
+  border: solid black 1px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 0px 5px;
+  outline: none;
+}
+
+.form-main .form #idSalon {
+  width: 50px;
+  border: solid black 1px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 0px 5px;
+  outline: none;
+}
+.form-main .form #number {
+  width: 50px;
+  border: solid black 1px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 0px 5px;
+  outline: none;
+}
+
+.form-main .footer{
+  text-align: center;
+  margin-left: 0;
+}
+
+.form-main .footer .button{
+  letter-spacing: none;
+  height: 25px;
   color: #eee;
   background-color: #000;
   outline: none;
   padding: 0px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 700;
+  border: none;
 }
+
+.form-main .footer .button:hover{
+  background-color: #03949e;
+}
+
+.form-main .close{
+  outline: none;
+}
+

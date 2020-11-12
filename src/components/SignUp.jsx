@@ -36,32 +36,88 @@ export default class SignUp extends Component {
                       </span>
                       <span className="botonEntrar">
                         <input type="submit" value="Sign In"></input>
-                        <Popup trigger={<input type="submit" value="Registro"></input>} modal nested>
+                        <Popup trigger={<input type="button" value="Registro"></input>} modal nested>
                           { close => (<div className="form-main">
                             <button className="close" onClick={close}>×</button>
-                            <div className="header">Registro</div>
-                            <form className="form">
-                              <label htmlFor="nombre">Nombre</label>
-                              <input id="nombre" type="text" required/>
+                            <div className="header"><h3>Registro</h3></div>
+                            <hr color="black"/>
+                           <form className="form">
+                              <div className="uno">
+                                <label htmlFor="nombre">Nombre</label>
+                                <input id="nombre" type="text" autoComplete="off" required/>
+                              </div>
+                              <div className="dos">
+                                <label htmlFor="apellido">Apellido</label>
+                                <input id="apellido" type="text" autoComplete="off" required/>
+                              </div>
                               <br/>
-                              <label htmlFor="apellido">Apellido</label>
-                              <input id="apellido" type="text" required/>
+                              <div className="uno">
+                                <label htmlFor="email">E-Mail</label>
+                                <input id="email" type="mail" autoComplete="off" required/>
+                              </div>
+                              <div className="dos">
+                                <label htmlFor="reEmail">Confirmar E-Mail</label>
+                                <input id="reEmail" type="mail" autoComplete="off" required/>
+                              </div>
+                              <div className="uno">
+                                <label htmlFor="institucion">Instituci&oacute;n</label>
+                              <select name="Instituciones" id="institucion" required>
+                                <option value=""></option>
+                                <option>Colegio Rafael Uribe de Acosta</option>
+                                <option>Otro</option>
+                              </select>
                               <br/>
-                              <label htmlFor="email">E-Mail</label>
-                              <input id="email" type="mail" required/>
+                              <label htmlFor="cargo">Cargo</label>
+                              <select name="Cargo" id="cargo" required>
+                                <option value=""></option>
+                                <option value="">Profesor</option>
+                                <option value="">Coordinador</option>
+                                <option value="">Administrativo</option>
+                              </select>
                               <br/>
-                              <label htmlFor="institucion">Instituci&oacute;n</label>
-                              <input id="institucion" type="text" required/>
-                              <br/>
-                              <label htmlFor="contra">Contraseña</label>
+                              <label htmlFor="curso">Curso</label>
+                              <select name="Curso" id="curso">
+                                <option value=""></option>
+                                <option value="">Primero</option>
+                                <option value="">Segundo</option>
+                                <option value="">Tercero</option>
+                                <option value="">Cuerto</option>
+                                <option value="">Quinto</option>
+                              </select>
+                              <label htmlFor="idSalon"> -</label>
+                              <select name="" id="idSalon">
+                                <option value=""></option>
+                                <option value="">A</option>
+                                <option value="">B</option>
+                                <option value="">C</option>
+                                <option value="">D</option>
+                              </select>
+                              <label htmlFor="number"> -</label>
+                              <select name="" id="number">
+                                <option value=""></option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                              </select>
+                              </div>
+                              <div className="dos">
+                                <label htmlFor="contra">Contraseña</label>
                               <input id="contra" type="password" required/>
                               <br/>
                               <label htmlFor="recontra">Confirmar Contraseña</label>
                               <input id="recontra" type="password" required/>
+                              </div>
+                              <br/>
+                              <br/>
                             <div className="footer">
-                              <input type="submit" value="Registrar"/>
+                              <input className="button" type="submit" value="Registrar"/>
+                              <button className="button"  onClick={() => {
+                                close();
+                              }}>Cancelar</button>
                             </div>
-                            </form>
+                              </form>
                           </div>)}
                         </Popup> 
                       </span>
