@@ -3,6 +3,7 @@ import "./App.css";
 import Navigation from "./components/Navigation";
 import SignUp from "./components/SignUp";
 import Banner from "./components/Banner";
+import InicioPanelEscort from "./components/InicioPanelEscort";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 const App = () => (
@@ -11,6 +12,7 @@ const App = () => (
     <Switch>
       <Route path="/" exact component={Banner} />
       <Route path="/Ingresar" component={SignUp} />
+      <Route path="/InicioPanelEscort" component={InicioPanelEscort} />
 
       <Route
         component={() => (

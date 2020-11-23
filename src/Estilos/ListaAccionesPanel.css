@@ -1,0 +1,102 @@
+body{
+    background: #f2f2f2f2;
+    width: auto;
+}
+
+.con_padding{
+  padding-top: 85px;
+}
+
+.card_wrap{
+    position: relative;
+    width: 90%;
+    padding: 60px 46px;
+    border-radius: 12px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
+    margin: 12px 0px;
+}
+
+.card_wrap.card-1{
+    background-image: linear-gradient(135deg, #FDEB71 10%, #F8D800 100%);
+}
+
+.card_wrap.card-2{
+    background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+}
+
+.card_wrap.card-3{
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+}
+
+.card_head{
+    position: relative;
+    font-size: 40px;
+    color: #ffff;
+    line-height: 1;
+    padding-bottom: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.health_container{
+   padding: 3px 15px;
+   display: inline-block;
+   font-size: 10px;
+   border-radius: 7px;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.health_container.tip-1{
+    background-color: #988506;
+    color:#fdeb71;
+}
+
+.health_container.tip-2{
+    background-color: #1375a2;
+    color:#e3f2fd;
+}
+
+.health_container.tip-3{
+    background-color: #880e4f;
+    color:#f8bbd0;
+}
+
+.card_body{
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 25px;
+    line-height: 1.5;
+}
+
+.btn_container{
+    border:none;
+    color: #ffff;
+    width:100%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-style: 10px;
+    cursor: pointer;
+    margin: auto;
+    line-height: 1.5;
+    border-radius: .25rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn_container.btn-1{
+    background-color: #988506;
+}
+
+.btn_container.btn-2{
+    background-color: #115f83;
+}
+
+.btn_container.btn-3{
+    background-color: #9f0441;
+}
+
+.dots_img{
+    width: 316px;
+    position: absolute;
+    top: -60px;
+    right: 3px;
+    opacity: 0.1;
+}

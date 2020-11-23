@@ -13,13 +13,16 @@ const Navigation = () => (
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon">  </span>
+        <span className="navbar-toggler-icon"> </span>
       </button>
       <NavLink className="navbar-brand aLogo " to={`/`}>
         Escort
       </NavLink>
 
-      <div className="collapse navbar-collapse menuhamb " id="navbarTogglerDemo03">
+      <div
+        className="collapse navbar-collapse menuhamb "
+        id="navbarTogglerDemo03"
+      >
         <ul className="navbar-nav mr-auto mt-2 mt-lg-0 menuhamb">
           <li className="nav-item active menuhamb">
             <NavLink className="nav-link menuhamb" to={`/Ingresar/`}>
@@ -29,6 +32,15 @@ const Navigation = () => (
           <li className="nav-item">
             <NavLink className="nav-link menuhamb" to="#">
               Como Funciona
+            </NavLink>
+          </li>
+
+          <li className="nav-item">
+            <NavLink
+              className="nav-link menuhamb"
+              to={`/PaginaVerificacionDatos/`}
+            >
+              Pagina Verificación
             </NavLink>
           </li>
         </ul>
