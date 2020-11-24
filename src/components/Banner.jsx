@@ -32,7 +32,7 @@ const Banner = () => (
       <div className="carousel-item ">
         <img
           className="d-block w-100 imagenesBanner"
-          src="https://vilmanunez.com/wp-content/uploads/2018/07/como-hacer-un-banner.png"
+          src="https://cdn.pixabay.com/photo/2017/03/12/13/41/beaded-2137080_960_720.jpg"
           alt="Second slide"
         ></img>
         <div className="carousel-caption ">

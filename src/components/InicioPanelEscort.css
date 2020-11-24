@@ -2,7 +2,7 @@
     color: black;
     background-image: url("https://cdn.pixabay.com/photo/2018/07/08/08/44/art-and-craft-3523450_960_720.jpg");
     background-size: cover;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     height: 100vh;
   
   }

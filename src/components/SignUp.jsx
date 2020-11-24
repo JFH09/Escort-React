@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./SignUp.css";
 import Popup from "reactjs-popup";
-import Alerta from "./alertas/ValoresDiferentes";
 import PopupC from "./PopupC";
 import InicioPanelEscort from "./InicioPanelEscort";
 import {
@@ -11,7 +10,6 @@ import {
 } from "../configuracion/Config_DB_Firebase";
 
 const SignUp = () => {
-  let enlace = "";
   const estadoInicalInicioUsuario = {
     email: "",
     contraseña: "EscortColegioOfelia##1",
@@ -115,7 +113,7 @@ const SignUp = () => {
   useEffect(() => {
     authListener();
   }, []);*/
-
+  const id = "";
   const agregarEditarUsuario = async (objetoDePopupC) => {
     console.log("objetoContraseña ==&", objetoDePopupC.contraseña);
     await autenticacion
@@ -195,11 +193,7 @@ const SignUp = () => {
                     </span>
                     <span className="botonEntrar">
                       <Link
-                        onClick={
-                          ((enlace = pasoUsuario(estadoConexionUsuario.entrar)),
-                          console.log(enlace))
-                        }
-                        to={`/${enlace}/`}
+                        to={`/InicioPanelEscort/${estadoInicioUsuario.email}`}
                       >
                         <input type="submit" value="Sign In"></input>
                       </Link>

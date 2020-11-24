@@ -65,13 +65,12 @@ body{
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 25px;
     line-height: 1.5;
-    
 }
 
 .btn_container{
     border:none;
     color: #ffff;
-    width:100%;
+    width:30%;
     padding: 10px;
     text-align: center;
     text-decoration: none;
@@ -95,9 +94,17 @@ body{
 }
 
 .dots_img{
-    width: 316px;
-    position: absolute;
-    top: -60px;
-    right: 3px;
-    opacity: 0.1;
+    width: auto;
+    position: center;
+    height: 100%;
+    
+}
+@media only screen and (min-width : 200px) and (max-width : 640px) {
+    .dots_img{
+        height: 240px;
+        width: 100%;
+    }
+    .btn_container{
+        width: 100%;
+    }
 }

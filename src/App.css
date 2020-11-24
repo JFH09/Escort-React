@@ -8,6 +8,7 @@ background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, F
 .imagenesBanner{
   height: 100vh;
   width: 100%;
+  
 }
 
 .botonBanner{
@@ -39,5 +40,9 @@ background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, F
 .menuhamb{
   background-image:auto;
   color: #ffffff;
+  
+}
+
+.Error404{
   
 }
