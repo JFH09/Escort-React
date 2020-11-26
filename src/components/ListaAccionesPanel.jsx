@@ -19,7 +19,6 @@ const ListaAccionesPanel = () => {
   return (
     <div>
       <BotonFlotante />
-      <Navigation usuario={usuario} />
       <div className="contaner con_padding">
         <div className="row">
           <div className="col-12 col-lg-4 d-flex justify-content-center">

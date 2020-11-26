@@ -1,0 +1,62 @@
+body{
+    color: #000000;
+    background-image: url("https://cdn.pixabay.com/photo/2018/07/08/08/44/art-and-craft-3523450_960_720.jpg");
+    background-size: cover;
+    height: 100%;
+}
+
+
+.row{
+    
+    width: 72%;
+    justify-content: center;
+    margin-left: 15%;
+
+}
+
+.titulo{
+    margin-top: 12%;
+    margin-bottom: 2px;
+    margin-right: 25%;
+    color: #ffffff
+
+}
+
+.custom-file{
+    
+    justify-content: center;
+    margin-top: 5px;
+ 
+}
+
+.tablaEstudiantes{
+    margin-top: 4px;
+    color: #ffffff;
+
+}
+.cuerpoTabla{
+    color: #ffff;
+}
+.botones-inferiores{
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+@media  only screen and (min-width : 200px) and (max-width : 640px) {
+    body{
+        height: 100vh;
+    }
+   .titulo{
+       font-size: 10px;
+       color: #ffffff;
+       margin-top: 32%;
+       margin-bottom: 12%;
+   }
+   .custom-file{
+       margin-bottom: 8%;
+       width:100%;
+   }
+   .tablaEstudiantes{
+    width:100vh;
+   }
+}

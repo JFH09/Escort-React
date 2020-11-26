@@ -25,7 +25,7 @@ const Banner = () => (
         <div className="carousel-caption ">
           <h1>Colegio Rafael Uribe de Acosta</h1>
           <button type="button" className="btn btn-outline-info botonBanner">
-            Conocer más...
+            Escort Estudiantes
           </button>
         </div>
       </div>
@@ -39,7 +39,7 @@ const Banner = () => (
           <h1>Escort</h1>
           <Link to={`/Ingresar/`}>
             <button type="button" className="btn btn-outline-info botonBanner">
-              Entrar al Inicio de Escort
+              Escort Profesores
             </button>
           </Link>
         </div>

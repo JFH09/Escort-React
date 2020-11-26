@@ -43,6 +43,19 @@ background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, F
   
 }
 
-.Error404{
-  
+@media only screen and (min-width : 200px) and (max-width : 640px) {
+  .botonBanner{
+    width: auto;
+   
+  }
+  .imagenesBanner{
+    height: 100vh;
+    width: 100vh;
+    
+  }
+  .menuhamb{
+    background-image:linear-gradient( 109.5deg,  rgba(76, 128, 136, 0.801) 11.2%, rgba(92, 122, 255, 0.466) 91.1% );
+    color: #ffffff;
+
+  }
 }

@@ -1,5 +1,8 @@
 body{
     background: #f2f2f2f2;
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/19/11/35/crayons-1209804_960_720.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
 }
 
@@ -28,6 +31,13 @@ body{
 .card_wrap.card-3{
     background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
 }
+.card_wrap.card-4{
+    background-image: linear-gradient(to top, #6ed16e 0%, #1bda02 100%);
+}
+.card_wrap.card-5{
+    background-image: linear-gradient(to top, #ffc524 0%,#fda552 100%);
+}
+
 
 .card_head{
     position: relative;
@@ -59,6 +69,14 @@ body{
 .health_container.tip-3{
     background-color: #880e4f;
     color:#f8bbd0;
+}
+.health_container.tip-4{
+    background-color: #09a12f;
+    color:#bae0c3c7;
+}
+.health_container.tip-5{
+    background-color: #cf6a0b;
+    color:#fabb7f;
 }
 
 .card_body{
@@ -94,15 +112,27 @@ body{
     background-color: #9f0441;
 }
 
+.btn_container.btn-4{
+    background-color: #188834;
+}
+.btn_container.btn-5{
+    background-color: #d4741a;
+}
 .dots_img{
-    width: 316px;
-    position: absolute;
-    top: -60px;
+    width: 100%;
+    position: cover;
     right: 3px;
     opacity: 0.1;
+    height: 100%;
+    top: 0px;
 }
 
 @media only screen and (min-width : 200px) and (max-width : 640px){
+    body{
+        background-repeat: repeat-y;
+        height: 100vh;
+        
+    }
     .card_head{
         font-size:28px ;
     }
