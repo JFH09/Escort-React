@@ -11,14 +11,17 @@ const ConsultarEstudiantes = () => {
   console.log("desde consultar Estudiantes, entro...", usuario);
 
   const primero = "Primero";
+  const segundo = "Segundo";
+  const tercero = "Tercero";
   const cuarto = "Cuarto";
+  const quinto = "Quinto";
   return (
     <div>
       <div>
         <BotonFlotante />
-        <div className="contaner con_padding">
-          <div className="row">
-            <div className="col-12 col-lg-4 d-flex justify-content-center">
+        <div data-spy="scroll">
+          <div className="  container-fluid row con_padding">
+            <div className="  col-12 col-lg-4 d-flex justify-content-center">
               <div className="card_wrap card-1">
                 <Link to={`/${usuario}/CRUDEstudiantes/Curso/${primero}`}>
                   <img src={imagen} alt="" className="dots_img"></img>
@@ -42,7 +45,9 @@ const ConsultarEstudiantes = () => {
 
             <div className="col-12 col-lg-4 d-flex justify-content-center">
               <div className="card_wrap card-2">
-                <img src={imagen} alt="" className="dots_img"></img>
+                <Link to={`/${usuario}/CRUDEstudiantes/Curso/${segundo}`}>
+                  <img src={imagen} alt="" className="dots_img"></img>
+                </Link>
                 <div className="card_head">
                   Estudiantes, <br></br> Curso - <br></br> Segundo
                 </div>
@@ -54,12 +59,16 @@ const ConsultarEstudiantes = () => {
                   En esta opcion puedes ver los estudiantes que pertenecen a
                   cada salon respecto a primaria
                 </div>
-                <button className="btn_container btn-2">Ir</button>
+                <Link to={`/${usuario}/CRUDEstudiantes/Curso/${segundo}`}>
+                  <button className="btn_container btn-2">Ir</button>
+                </Link>
               </div>
             </div>
             <div className="col-12 col-lg-4 d-flex justify-content-center">
               <div className="card_wrap card-3">
-                <img src={imagen} alt="" className="dots_img"></img>
+                <Link to={`/${usuario}/CRUDEstudiantes/Curso/${tercero}`}>
+                  <img src={imagen} alt="" className="dots_img"></img>
+                </Link>
                 <div className="card_head">
                   Estudiantes, <br></br> Curso - <br></br> Tercero
                 </div>
@@ -71,7 +80,9 @@ const ConsultarEstudiantes = () => {
                   En esta opcion puedes ver los estudiantes que pertenecen a
                   cada salon respecto a primaria
                 </div>
-                <button className="btn_container btn-3">Ir</button>
+                <Link to={`/${usuario}/CRUDEstudiantes/Curso/${tercero}`}>
+                  <button className="btn_container btn-3">Ir</button>
+                </Link>
               </div>
             </div>
             <div className="col-12 col-lg-4 d-flex justify-content-center">
@@ -97,7 +108,7 @@ const ConsultarEstudiantes = () => {
             </div>
             <div className="col-12 col-lg-4 d-flex justify-content-center">
               <div className="card_wrap card-5">
-                <Link to={`/${usuario}/CRUDEstudiantes/Curso/${primero}`}>
+                <Link to={`/${usuario}/CRUDEstudiantes/Curso/${quinto}`}>
                   <img src={imagen} alt="" className="dots_img"></img>
                 </Link>
                 <div className="card_head">
@@ -111,7 +122,7 @@ const ConsultarEstudiantes = () => {
                   En esta opcion puedes ver los estudiantes que pertenecen a
                   cada salon respecto a primaria
                 </div>
-                <Link to={`/${usuario}/CRUDEstudiantes`}>
+                <Link to={`/${usuario}/CRUDEstudiantes/Curso/${quinto}`}>
                   <button class="btn_container btn-5">Ir</button>
                 </Link>
               </div>

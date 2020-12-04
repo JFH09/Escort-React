@@ -24,7 +24,7 @@ const Banner = () => (
         ></img>
         <div className="carousel-caption ">
           <h1>Colegio Rafael Uribe de Acosta</h1>
-          <button type="button" className="btn btn-outline-info botonBanner">
+          <button type="button" className="btn  text-light botonBanner">
             Escort Estudiantes
           </button>
         </div>
@@ -38,7 +38,7 @@ const Banner = () => (
         <div className="carousel-caption ">
           <h1>Escort</h1>
           <Link to={`/Ingresar/`}>
-            <button type="button" className="btn btn-outline-info botonBanner">
+            <button type="button" className="btn  text-light botonBanner">
               Escort Profesores
             </button>
           </Link>
@@ -52,7 +52,7 @@ const Banner = () => (
         ></img>
         <div className="carousel-caption ">
           <h1>Que Queremos Llegar Hacer</h1>
-          <button type="button" className="btn btn-outline-info botonBanner">
+          <button type="button" className="btn  text-light botonBanner">
             Sobre Nosotros...
           </button>
         </div>

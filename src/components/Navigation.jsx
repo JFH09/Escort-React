@@ -4,7 +4,7 @@ import { NavLink, useParams } from "react-router-dom";
 const Navigation = () => {
   return (
     <div className="barra">
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark color-Barra">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark color-Barra border border-info">
         <button
           className="navbar-toggler"
           type="button"
@@ -25,19 +25,22 @@ const Navigation = () => {
           id="navbarTogglerDemo03"
         >
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0 menuhamb">
-            <li className="nav-item active menuhamb">
+            <li className="nav-item active menuhamb text-light">
               <NavLink className="nav-link menuhamb" to={`/Ingresar/`}>
                 Inicio <span className="sr-only">(current)</span>
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link menuhamb" to="#">
+              <NavLink className="nav-link menuhamb text-light" to="#">
                 Como Funciona
               </NavLink>
             </li>
 
             <li className="nav-item">
-              <NavLink className="nav-link menuhamb" to={`/InicioPanelEscort/`}>
+              <NavLink
+                className="nav-link menuhamb text-light"
+                to={`/InicioPanelEscort/`}
+              >
                 Panel Inicial Escort
               </NavLink>
             </li>

@@ -1,0 +1,113 @@
+.fondoSeccion{
+    background-image: url(https://media.istockphoto.com/photos/bamboo-blackboard-picture-id490078720?b=1&k=6&m=490078720&s=170667a&w=0&h=BE1S56kbT0tV8zhC_H7DK9ofVAW1OJ9KeOq1yaEUQWc=);
+    background-repeat: no-repeat;
+    background-size: 100% 70vh;
+    height: 70vh;
+  
+}
+
+.seccionBotones{
+margin-top:10%;
+width: 100%;
+padding-top: 125px;
+font-family: "Cabin Sketch";
+}
+
+
+.tamañoSeccion{
+    width: 74%;
+    height: auto;
+    margin-top: 7%;
+}
+
+
+.seccionCardsPreguntas{
+    margin-top: 2%;
+}
+
+.cuerpoPreguntas{
+    margin-top: 5%;
+}
+
+.materia{
+    font-size: 23px;
+}
+.materiaTablero{
+    font-size: 25px;
+}
+.transparencia{
+    background-color: #ffffff42;
+}
+
+.botonEstilos{
+    background-image: linear-gradient( 109.5deg,  rgba(76,221,242,1) 11.2%, rgba(92,121,255,1) 91.1% );
+  color: #ffffff;
+  -webkit-box-shadow: -1px 13px 30px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 13px 30px -5px rgba(0,0,0,0.75);
+  box-shadow: -1px 13px 30px -5px rgba(0,0,0,0.75);
+}
+
+.botonEstilos:hover{
+
+  color: #ffffff;
+ 
+  transform: translateY(-7px);
+}
+
+.seccionBotones{
+
+    margin-top: 6px;
+    margin-left: 6px;
+    
+}
+
+.bg-Geografia{
+    background-color: #47265a;
+}
+.bg-Quimica{
+    background-color: #deb194;
+}
+.bg-EdFisica{
+    background-color:#ff5426;
+}
+
+.bg-Danzas{
+    background-color:#9b8ec6;
+}
+
+.bg-Artes{
+    background-color:#2d88a5;
+}
+
+.bg-Musica{
+    background-color:  #517245;
+}
+
+.bg-Religion{
+    background-color:  #004b8e;
+}
+
+.bg-Etica{
+    background-color: #74d6e1;
+}
+
+.bg-Informatica{
+    background-color: #566f73;
+}
+.bg-Ingles{
+    background-color: #008cc4;
+}
+
+@media only screen and (min-width : 200px) and (max-width : 640px) {
+    .cuerpoPreguntas{
+        width: 100%;
+        margin-top: 20%;
+        margin-left: 15px;
+    }
+    .tamañoSeccion{
+        width: 100%;
+    }
+    .materiaTablero{
+        font-size: 23px;
+    }
+}

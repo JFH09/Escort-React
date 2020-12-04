@@ -6,16 +6,15 @@ body{
 }
 
 
-.row{
+.segmento{
     
-    width: 72%;
-    justify-content: center;
-    margin-left: 15%;
+    width: 100%;
+  
 
 }
 
 .titulo{
-    margin-top: 12%;
+    
     margin-bottom: 2px;
     margin-right: 25%;
     color: #ffffff

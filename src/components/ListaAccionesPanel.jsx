@@ -19,8 +19,8 @@ const ListaAccionesPanel = () => {
   return (
     <div>
       <BotonFlotante />
-      <div className="contaner con_padding">
-        <div className="row">
+      <div data-spy="scroll">
+        <div className="  container-fluid row con_padding">
           <div className="col-12 col-lg-4 d-flex justify-content-center">
             <div className="card_wrap card-1">
               <Link to={`/${usuario}/CRUDEstudiantes`}>
@@ -45,17 +45,23 @@ const ListaAccionesPanel = () => {
 
           <div className="col-12 col-lg-4 d-flex justify-content-center">
             <div className="card_wrap card-2">
-              <img src={imagen} alt="" className="dots_img"></img>
+              <Link to={`/${usuario}/Preguntas`}>
+                <img src={imagen} alt="" className="dots_img"></img>
+              </Link>
               <div className="card_head">
                 Consultar, <br></br> Responder, <br></br> Preguntas
               </div>
 
-              <div className="health_container tip-2">opciones?????</div>
-              <div className="card_body">
-                Esta opcion es para poder registrar los estudiantes en el
-                respectivo curso...
+              <div className="health_container tip-2">
+                Informacion Preguntas
               </div>
-              <button className="btn_container btn-2">Ir</button>
+              <div className="card_body">
+                Esta opcion es para poder preguntar y responder preguntas
+                respecto a cada materia...
+              </div>
+              <Link to={`/${usuario}/Preguntas`}>
+                <button className="btn_container btn-2">Ir</button>
+              </Link>
             </div>
           </div>
           <div className="col-12 col-lg-4 d-flex justify-content-center">

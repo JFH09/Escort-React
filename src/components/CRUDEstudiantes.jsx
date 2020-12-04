@@ -9,6 +9,8 @@ import {
 } from "../configuracion/Config_DB_Firebase";
 
 const CRUDEstudiantes = () => {
+  var email = "";
+  var contraseña = "";
   const { usuario } = useParams();
   const estadoInicialLeido = {
     leido: false,
@@ -38,7 +40,6 @@ const CRUDEstudiantes = () => {
     });
 
     promise.then((d) => {
-      console.log(d);
       setEstadoArchivo(d);
       setEstadoLeido({
         leido: true,
@@ -46,62 +47,9 @@ const CRUDEstudiantes = () => {
     });
   };
 
-  const registrarEstudiantes = (archivo) => {
-    console.log("ENTRO A REGISTRAR ESTUDIANTES", archivo[1].identificador);
-
-    const tamaño = archivo.length;
-    for (let i = 0; i < tamaño; i++) {
-      console.log("leyendo archivo en el for...", archivo[i]);
-      const objetoArchivo = archivo[i];
-      const email =
-        objetoArchivo.nombre +
-        objetoArchivo.apellido +
-        objetoArchivo.identificador +
-        objetoArchivo.curso +
-        "@escort.com";
-      const contraseña = "EscortColegioOfelia##1";
-      console.log("EMAIL ..***+****", email);
-      agregarEstudiantes(archivo[i], email, contraseña);
-    }
-  };
-
-  const agregarEstudiantes = async (Archivo, email, contraseña) => {
-    console.log("llego.. ", Archivo);
-    await autenticacion
-      .createUserWithEmailAndPassword(email, contraseña)
-      .then((resultado) => {
-        console.log("Agregando a...", Archivo);
-        basedeDatos
-          .collection("informacion")
-          .doc("informacionUsuarios")
-          .collection("estudiantes")
-          .doc("cursos")
-          .collection(Archivo.curso)
-          .doc("integrantes")
-          .collection("listaEstudiantes")
-          .doc()
-          .set(Archivo)
-          .catch((error) => {
-            console.log(error);
-          });
-        console.log("Usuario Agregado...", Archivo);
-      })
-      .catch((error) => {
-        switch (error.code) {
-          case "auth/email-already-in-use":
-          case "auth/invalid-email":
-          case "auth/weak-password":
-          default:
-            console.log("no se encontro el error..");
-            break;
-        }
-      });
-    console.log("correo para Escort Creado...");
-  };
-
   return (
-    <div className="cuerpo-Crud  ">
-      <div className=" row segmento">
+    <div className="container cuerpo-Crud  " data-spy="scroll">
+      <div className=" row segmento justify-content-center">
         <div className="titulo">
           {console.log("entro a crud estudiante..")}
           <h1>Registro de estudiantes (Excel)</h1>
@@ -153,6 +101,42 @@ const CRUDEstudiantes = () => {
                   <td class="bg-info ">{d.apellido}</td>
                   <td class="bg-info ">{d.identificador}</td>
                   <td class="bg-info ">{d.curso}</td>
+                  {autenticacion
+                    .createUserWithEmailAndPassword(
+                      d.nombre +
+                        d.apellido +
+                        d.identificador +
+                        d.curso +
+                        "@escort.com",
+                      "EscortColegioOfelia##1"
+                    )
+                    .then(async (resultado) => {
+                      console.log("Agregando a...", d);
+                      await basedeDatos
+                        .collection("informacion")
+                        .doc("informacionUsuarios")
+                        .collection("estudiantes")
+                        .doc("cursos")
+                        .collection(d.curso)
+                        .doc("integrantes")
+                        .collection("listaEstudiantes")
+                        .doc()
+                        .set(d)
+                        .catch((error) => {
+                          console.log(error);
+                        });
+                      console.log("Usuario Agregado...", d);
+                    })
+                    .catch((error) => {
+                      switch (error.code) {
+                        case "auth/email-already-in-use":
+                        case "auth/invalid-email":
+                        case "auth/weak-password":
+                        default:
+                          console.log("no se encontro el error..");
+                          break;
+                      }
+                    })}
                 </tr>
               ))}
             </tbody>
@@ -160,11 +144,16 @@ const CRUDEstudiantes = () => {
         </div>
         <div className="boton-Registrar-Estudiantes">
           {estadoLeido.leido ? (
-            <Link to={`/${usuario}/ConsultarEstudiantes/`}>
-              <button className="btn btn-primaty col-12 sm botones-inferiores">
-                Consultar Estudiantes Registrados
-              </button>
-            </Link>
+            <div>
+              <Link to={`/${usuario}/ConsultarEstudiantes/`}>
+                <button className="btn btn-primary col-12 sm botones-inferiores">
+                  Consultar Estudiantes Registrados
+                </button>
+                <button className="btn btn-success col-12 sm botones-inferiores">
+                  Registrar Estudiantes
+                </button>
+              </Link>
+            </div>
           ) : (
             <div className=" botones-inferiores">
               <Link to={`/${usuario}/ConsultarEstudiantes/`}>
