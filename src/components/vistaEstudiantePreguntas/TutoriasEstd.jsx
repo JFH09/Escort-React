@@ -1,15 +1,15 @@
 import React from "react";
 import "../../Estilos/SeccionPreguntas.css";
-import SeccionRespuestasEstd from "./SeccionRespuestasEstd";
+import SeccionTutoriasEstd from "./SeccionTutoriasEstd";
 
-const PreguntasEstudiantes = () => {
+const TutoriasEstd = () => {
   return (
     <div data-spy="scroll" className=" cuerpoPreguntas">
       <div className="container-fluid row ">
-        <SeccionRespuestasEstd />
+        <SeccionTutoriasEstd />
       </div>
     </div>
   );
 };
 
-export default PreguntasEstudiantes;
+export default TutoriasEstd;

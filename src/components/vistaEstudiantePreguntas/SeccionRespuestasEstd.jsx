@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import SeccionPreguntas from "./SeccionPreguntas";
-import "../Estilos/SeccionPreguntas.css";
-import { basedeDatos } from "../configuracion/Config_DB_Firebase";
+
+import SeccionPreguntas from "./SeccionPreguntasEstd";
+import "../../Estilos/SeccionPreguntas.css";
+import { basedeDatos } from "../../configuracion/Config_DB_Firebase";
 const SeccionRespuestas = () => {
   const [estadoProblemas, setEstadoProblemas] = useState([]);
 
@@ -262,19 +263,11 @@ const SeccionRespuestas = () => {
                   >
                     edit
                   </i>
-                  <i
-                    className="material-icons text-danger"
-                    onClick={() =>
-                      eliminarPregunta(materia.id, materia.tituloPregunta)
-                    }
-                    hover="pointer"
-                  >
-                    delete
-                  </i>
                 </div>
               </div>
               <h6>{materia.descripcion}</h6>
               <p>{materia.pregunta}</p>
+              <p>Creado Por : {materia.creador}</p>
               <a href="" target="_blank" rel="noopener noreferrer">
                 Contestar Pregunta...
               </a>

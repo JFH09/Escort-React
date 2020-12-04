@@ -24,9 +24,11 @@ const Banner = () => (
         ></img>
         <div className="carousel-caption ">
           <h1>Colegio Rafael Uribe de Acosta</h1>
-          <button type="button" className="btn  text-light botonBanner">
-            Escort Estudiantes
-          </button>
+          <Link to={`/InicioSesionEstudiantes`}>
+            <button type="button" className="btn  text-light botonBanner">
+              Escort Estudiantes
+            </button>
+          </Link>
         </div>
       </div>
       <div className="carousel-item ">

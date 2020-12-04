@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { basedeDatos } from "../configuracion/Config_DB_Firebase";
-import "../Estilos/SeccionPreguntas.css";
+import { useParams } from "react-router-dom";
+
+import { basedeDatos } from "../../configuracion/Config_DB_Firebase";
+import "../../Estilos/SeccionPreguntas.css";
 
 const SeccionPreguntas = (props) => {
+  const usuarioEntra = useParams();
+  console.log("El usuario que entro estd = ", usuarioEntra.usuario);
   console.log("ENTRO EN SECCION PREGUNTAS!!!!");
   const estadoInicialPreguntas = {
     tituloPregunta: "",
     descripcion: "",
     pregunta: "",
     respuesta: "",
+    creadoPor: usuarioEntra.usuario + usuarioEntra.curso,
   };
   const [estadoPreguntas, setEstadoPreguntas] = useState(
     estadoInicialPreguntas

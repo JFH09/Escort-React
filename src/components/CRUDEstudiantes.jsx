@@ -157,13 +157,15 @@ const CRUDEstudiantes = () => {
           ) : (
             <div className=" botones-inferiores">
               <Link to={`/${usuario}/ConsultarEstudiantes/`}>
-                <button className="btn btn-primaty col-12 sm botones-inferiores">
+                <button className="btn btn-primary col-12 sm botones-inferiores">
                   Consultar Estudiantes Registrados
                 </button>
               </Link>
-              <button className="btn btn-warning col-12 sm botones-inferiores sm">
-                Volver
-              </button>
+              <Link to={`/InicioPanelEscort/${usuario}`}>
+                <button className="btn btn-warning col-12 sm botones-inferiores sm">
+                  Volver
+                </button>
+              </Link>
             </div>
           )}
         </div>
