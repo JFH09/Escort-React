@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import SeccionPreguntas from "./SeccionPreguntas";
 import "../Estilos/SeccionPreguntas.css";
 import { basedeDatos } from "../configuracion/Config_DB_Firebase";
@@ -275,6 +276,7 @@ const SeccionRespuestas = () => {
               </div>
               <h6>{materia.descripcion}</h6>
               <p>{materia.pregunta}</p>
+              <p>Creado Por : {materia.creador}</p>
               <a href="" target="_blank" rel="noopener noreferrer">
                 Contestar Pregunta...
               </a>

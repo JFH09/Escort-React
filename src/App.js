@@ -13,7 +13,9 @@ import FormularioEditEstudiante from "./components/FormularioEditEstudiante";
 import InicioSesionEstudiantes from "./components/vistaEstudiantePreguntas/InicioSesionEstudiantes";
 import PanelEstudiantes from "./components/vistaEstudiantePreguntas/PanelEstudiantes";
 import PreguntasEstudiantes from "./components/vistaEstudiantePreguntas/PreguntasEstudiantes";
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import "bootswatch/dist/sketchy/bootstrap.min.css";
 const App = () => (
   <Router>
@@ -39,6 +41,7 @@ const App = () => (
         path="/:usuario/CRUDEstudiantes/Curso/:curso/FormularioEditEstudiante/:nombre/:apellido/:curso/:identificador/:numero"
         component={FormularioEditEstudiante}
       />
+
       <Route path="/:usuario/CRUDEstudiantes/Curso/:curso" component={Curso} />
       <Route path="/:usuario/CRUDEstudiantes" component={CRUDEstudiantes} />
       <Route
